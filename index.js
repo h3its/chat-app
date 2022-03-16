@@ -4,7 +4,7 @@ const http = require('http');
 const server = http.createServer(app);
 
 app.get('/', (req, res) => {
-  res.send('<h1>...it was neither possible for necessary\nto educate people who never questioned anything</h1>');
+  res.sendFile('/index.html');
 });
 
 server.listen(3000, () => {
